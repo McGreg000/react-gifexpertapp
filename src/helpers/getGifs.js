@@ -11,6 +11,5 @@
       }
    })
 
-   //console.log(data);
    return gifs;
 }

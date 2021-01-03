@@ -6,13 +6,11 @@ export const AddCategory = ({ setCategories }) => {
    const [inputValue, setinputValue] = useState('');
    
    const handleInputChange = (ev) => {
-      //console.log(ev.target.value);
       setinputValue(ev.target.value);
    }
    
    const handleSubmit = (ev) => {
       ev.preventDefault();
-      //console.log(ev.target.inputCat.value);
       if ( inputValue.trim().length > 2 ) { // Validacion sobre tamaño de las cadenas
          setCategories( cats => [inputValue, ...cats ] );
          setinputValue(''); //Borramos el inputValue para que no se repita
@@ -21,12 +19,6 @@ export const AddCategory = ({ setCategories }) => {
       
    }
 
-/* Tarea :
-   1.- Modificar AddCategory para que reciba por props el setCategories 
-      pasado desde GifExpertApp
-   2.- Modificar handleSubmit para que use setCategories para añadir la
-      nueva categoria. 
- */
    return (
       <form onSubmit={ handleSubmit }>
          <input 

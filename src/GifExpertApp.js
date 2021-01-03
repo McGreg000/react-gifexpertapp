@@ -6,12 +6,7 @@ export const GifExpertApp = () =>{
 
    const [categories, setCategories] = useState(['One Punch Man']);
 
-   // const handleAdd = () => {
-   //    setCategories([...categories, 'Bleach']);
-   //    //setCategories( cats => [...cats, 'Bleach'] ); //Hace lo mismo usando el callback del setCategories
-   // };
-
-   return (
+    return (
       <>
          <h2>GifExpertApp</h2>
          <AddCategory setCategories={ setCategories } />

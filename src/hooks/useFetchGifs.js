@@ -17,7 +17,6 @@ export const useFetchGifs = ( category ) => {
                   data: imgs, 
                   loading: false
                });
-               console.log(imgs);
                
             }, 500);
          });
@@ -26,5 +25,3 @@ export const useFetchGifs = ( category ) => {
 
    return state; 
 }
-
-
